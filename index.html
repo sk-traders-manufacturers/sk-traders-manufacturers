@@ -2,132 +2,175 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>Industrial Adhesives, Tapes & Packaging Material Supplier in Noida | SK Traders & Manufacturers</title>
+
+<meta name="description" content="SK Traders & Manufacturers is a trusted industrial adhesive, BOPP tape, filament tape and packaging material supplier in Noida & Delhi NCR. Bulk supply available.">
+<meta name="keywords" content="Industrial Adhesive Supplier in Noida, Industrial Tapes Supplier Delhi NCR, Packaging Material Supplier Noida, BOPP Tape Supplier, Acrabond Adhesives">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Industrial Adhesives, Tapes & Packaging Supplier in Noida</title>
-
-<meta name="description" content="SK Traders & Manufacturers is a trusted supplier of industrial adhesives, BOPP tapes, filament tapes, foam tapes and packaging materials in Noida & Delhi-NCR. Bulk supply available.">
-
-<meta name="keywords" content="Industrial Adhesive Supplier in Noida, BOPP Tape Supplier Noida, Packaging Material Supplier Delhi NCR, Industrial Tapes Supplier Noida, Acrabond Adhesive Supplier">
-
-<meta name="author" content="SK Traders & Manufacturers">
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
 body{
-margin:0;
-font-family:Arial, sans-serif;
-line-height:1.6;
-background:#f4f4f4;
-color:#333;
+    background:#0e0e0e;
+    color:#fff;
 }
 
+/* HEADER */
 header{
-background:#111;
-color:#fff;
-padding:20px;
-text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 8%;
+    background:#000;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-header h1{
-margin:0;
-font-size:28px;
+header img{
+    height:45px;
 }
 
+header nav a{
+    color:#fff;
+    margin-left:30px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+header nav a:hover{
+    color:#c1121f;
+}
+
+/* HERO */
 .hero{
-background:#d32f2f;
-color:#fff;
-padding:50px 20px;
-text-align:center;
+    height:90vh;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    background:linear-gradient(120deg,#8b0000,#1a1a1a);
 }
 
-.hero h2{
-font-size:30px;
-margin-bottom:10px;
+.hero-content{
+    max-width:650px;
+    animation:fadeUp 1.2s ease;
 }
 
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+.hero a{
+    padding:14px 32px;
+    background:#000;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.hero a:hover{
+    background:#c1121f;
+}
+
+/* PRODUCTS */
 .section{
-padding:40px 20px;
-max-width:1100px;
-margin:auto;
-background:#fff;
-margin-top:20px;
-border-radius:8px;
+    padding:80px 8%;
 }
 
-.section h3{
-color:#d32f2f;
-margin-bottom:20px;
+.section h2{
+    font-size:36px;
+    margin-bottom:40px;
+    text-align:center;
 }
 
-ul{
-padding-left:20px;
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
 }
 
+.card{
+    background:#161616;
+    padding:30px;
+    border-radius:14px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:#1f1f1f;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* FOOTER */
 footer{
-background:#111;
-color:#fff;
-text-align:center;
-padding:20px;
-margin-top:30px;
+    background:#000;
+    padding:30px 8%;
+    text-align:center;
+    font-size:14px;
 }
-.button{
-display:inline-block;
-background:#d32f2f;
-color:#fff;
-padding:10px 20px;
-margin-top:15px;
-text-decoration:none;
-border-radius:5px;
+
+/* ANIMATION */
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@media(max-width:768px){
+    .hero h1{font-size:34px;}
 }
 </style>
-
 </head>
+
 <body>
 
 <header>
-<h1>SK Traders & Manufacturers</h1>
-<p>Trusted Industrial Adhesive, Tape & Packaging Material Supplier</p>
+    <img src="logo.png" alt="SK Traders & Manufacturers Logo">
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
 <section class="hero">
-<h2>Industrial Adhesives, Tapes & Packaging Material Supplier in Noida</h2>
-<p>Reliable bulk supply for industrial & commercial use across Noida and Delhi-NCR.</p>
-<a href="#contact" class="button">Contact Us</a>
+    <div class="hero-content">
+        <h1>Industrial Adhesives, Tapes & Packaging Material Supplier in Noida</h1>
+        <p>Trusted supplier of Acrabond adhesives, BOPP tapes, filament tapes and industrial packaging materials with reliable bulk supply across Noida & Delhi NCR.</p>
+        <a href="#contact">Get Quote</a>
+    </div>
 </section>
 
-<section class="section">
-<h3>Our Products</h3>
-<ul>
-<li>Industrial Adhesives (Acrabond & More)</li>
-<li>BOPP Tapes</li>
-<li>Filament Tapes</li>
-<li>Foam Tapes</li>
-<li>Industrial Packing & Wrapping Materials</li>
-<li>Packaging Materials for Commercial Use</li>
-</ul>
+<section class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="card"><h3>Industrial Adhesives</h3><p>Acrabond & more for industrial applications.</p></div>
+        <div class="card"><h3>BOPP Tapes</h3><p>High strength packaging tapes.</p></div>
+        <div class="card"><h3>Filament Tapes</h3><p>Heavy duty reinforced tapes.</p></div>
+        <div class="card"><h3>Foam Tapes</h3><p>Double sided industrial bonding.</p></div>
+        <div class="card"><h3>Packaging Materials</h3><p>Industrial packing & wrapping solutions.</p></div>
+    </div>
 </section>
 
-<section class="section">
-<h3>Why Choose SK Traders?</h3>
-<ul>
-<li>✔ 15+ Years Industry Experience</li>
-<li>✔ Bulk Supply Available</li>
-<li>✔ Reliable & Durable Products</li>
-<li>✔ Timely Delivery Across Noida & Delhi-NCR</li>
-<li>✔ Trusted by Manufacturing & Industrial Units</li>
-</ul>
-</section>
-
-<section class="section" id="contact">
-<h3>Contact Us</h3>
-<p><strong>Location:</strong> Noida, Uttar Pradesh</p>
-<p><strong>Service Area:</strong> Noida & Delhi-NCR</p>
-<p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
-<p><strong>Email:</strong> your@email.com</p>
-<a href="#" class="button">Get Bulk Quote</a>
-</section>
-
-<footer>
-<p>© 2026 SK Traders & Manufacturers | Industrial Adhesive & Packaging Supplier in Noida</p>
+<footer id="contact">
+    <p>📍 Serving Noida & Delhi NCR</p>
+    <p>📞 Contact SK Traders & Manufacturers for bulk supply</p>
 </footer>
 
 </body>
